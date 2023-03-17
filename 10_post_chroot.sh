@@ -3,12 +3,12 @@
 set -Euo pipefail
 
 ln -s /usr/bin/vim /usr/bin/vi
-ln -sf /usr/share/zoneinfo/US/Central /etc/localtime
+ln -sf /usr/share/zoneinfo/Europe/Lisbon /etc/localtime
 hwclock --systohc
 
-sed -i 's/#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/g' /etc/locale.gen
+sed -i 's/#pt_PT.UTF-8 UTF-8/pt_PT.UTF-8 UTF-8/g' /etc/locale.gen
 locale-gen
-echo 'LANG=en_US.UTF-8' > /etc/locale.conf
+echo 'LANG=pt_PT.UTF-8' > /etc/locale.conf
 
 cp -r files/etc/* /etc
 chmod a-x /etc/hostname /etc/hosts /etc/systemd/network/*
