@@ -9,18 +9,12 @@ mkdir /store
 mount /dev/sdb1 /store
 cd /store/arch_install
 ```
+### Run all the scripts that handle disk management 
+The script accepts "sata" and "nvme" as valid inputs
 
-### Create RAID setup
+example:
 ```
-./01_create_partitions.sh
-./02_create_raid.sh
-```
-
-### Create filesystems
-```
-./03_create_filesystems.sh
-./04_configure_btrfs.sh
-./05_mount_btrfs.sh
+sh 00_setup_scripts.sh sata
 ```
 
 ### Download system files
