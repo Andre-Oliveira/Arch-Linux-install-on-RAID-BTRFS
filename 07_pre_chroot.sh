@@ -11,3 +11,4 @@ sed -i 's/rootflags=subvol=${rootsubvol} //g' /mnt/etc/grub.d/10_linux /mnt/etc/
 mdadm --detail --scan --verbose >> /mnt/etc/mdadm.conf
 sed -i 's/metadata=1.2 name=archiso:[23] //g' /mnt/etc/mdadm.conf
 
+cp -r /root/Arch-Linux-install-on-RAID-BTRFS /mnt
