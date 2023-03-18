@@ -2,6 +2,8 @@
 
 set -Euo pipefail
 
+pacman -Sy
+
 pacman -S xorg xorg-server
 pacman -S plasma kde-applications
 pacman -S ttf-liberation ttf-fira-code

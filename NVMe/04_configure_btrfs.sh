@@ -36,6 +36,6 @@ mkdir /mnt/var
 mkdir /mnt/home
 
 mkdir -p /mnt/boot/grub2/x86_64-efi__nvme0n1p1
-mkdir -p /mnt/boot/grub2/x86_64-efi__nvme1n1p1
+mkdir -p /mnt/boot/grub2/x86_64-efi__nvme0n2p1
 
 umount /mnt
