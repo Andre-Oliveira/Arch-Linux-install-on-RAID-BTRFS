@@ -5,6 +5,9 @@ set -Euo pipefail
 # cd /store/Arch-Linux-install-on-RAID-BTRFS
 
 ANSWER=$1
+loadkeys pt-latin9
+pacman -Sy
+pacman -S git tmux
 
 if [ $ANSWER = "sata" ]; then	
     sh SATA/01_create_partitions.sh
